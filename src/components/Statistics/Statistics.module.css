@@ -1,0 +1,11 @@
+.statistics__section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 700;
+}
+.statistics {
+  display: flex;
+  color: rgb(66, 66, 66);
+  font-size: 12px;
+}

@@ -1,0 +1,24 @@
+.buttons__section {
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: white;
+  color: black;
+  font-weight: 700;
+  padding: 5px 15px;
+}
+
+.buttons {
+  box-shadow: 1px 3px 6px 1px #00000040;
+  border-radius: 10px;
+  background-color: rgb(204, 204, 204);
+  font-weight: 700;
+  padding: 10px 15px;
+  border: 1px solid #b1b1b1;
+}
+.buttons:hover,
+.buttons:active {
+  background-color: rgb(75, 252, 140);
+  cursor: pointer;
+}
