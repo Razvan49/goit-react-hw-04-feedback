@@ -1,13 +1,10 @@
-import PropTypes from 'prop-types';
 import style from './Statistics.module.css';
 
 const Statistics = ({ good, neutral, bad, countFeedback }) => {
-  // Calculează procentul feedback-urilor pozitive
   const countPercentage = () => {
     const percentage = Math.round((good / countFeedback) * 100);
     return percentage || 0;
   };
-  // Informațiile pentru afișarea statisticilor
   const data = [
     { id: 1, text: 'Good: ', value: good },
     { id: 2, text: 'Neutral: ', value: neutral },
@@ -23,7 +20,6 @@ const Statistics = ({ good, neutral, bad, countFeedback }) => {
 
   return (
     <div className={style.statistics__section}>
-      {/* Afișează statisticile */}
       {data.map(item => {
         return (
           <p className={style.statistics} key={item.id}>
@@ -37,10 +33,4 @@ const Statistics = ({ good, neutral, bad, countFeedback }) => {
   );
 };
 
-Statistics.propTypes = {
-  good: PropTypes.number.isRequired,
-  neutral: PropTypes.number.isRequired,
-  bad: PropTypes.number.isRequired,
-  countFeedback: PropTypes.number.isRequired,
-};
 export default Statistics;
